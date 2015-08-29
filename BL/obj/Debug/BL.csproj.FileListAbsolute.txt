@@ -1,0 +1,30 @@
+C:\Prineeth\PA UI\ProductAssemblerBL\bin\AmericanExpress.PaUi.BL.dll.config
+C:\Prineeth\PA UI\ProductAssemblerBL\bin\AmericanExpress.PaUi.BL.dll
+C:\Prineeth\PA UI\ProductAssemblerBL\bin\AmericanExpress.PaUi.BL.pdb
+C:\Prineeth\PA UI\ProductAssemblerBL\bin\AmericanExpress.PaUi.BE.dll
+C:\Prineeth\PA UI\ProductAssemblerBL\bin\AmericanExpress.PaUi.DL.dll
+C:\Prineeth\PA UI\ProductAssemblerBL\bin\AmericanExpress.PaUi.BE.pdb
+C:\Prineeth\PA UI\ProductAssemblerBL\bin\AmericanExpress.PaUi.DL.pdb
+C:\Prineeth\PA UI\ProductAssemblerBL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Prineeth\PA UI\ProductAssemblerBL\obj\Debug\AmericanExpress.PaUi.BL.dll
+C:\Prineeth\PA UI\ProductAssemblerBL\obj\Debug\AmericanExpress.PaUi.BL.pdb
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\bin\BL.dll.config
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\bin\BL.dll
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\bin\BL.pdb
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\bin\BE.dll
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\bin\DL.dll
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\bin\BE.pdb
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\bin\DL.pdb
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\obj\Debug\BL.dll
+C:\Users\sanji_000\Documents\Visual Studio 2012\Projects\OnlineCV\BL\obj\Debug\BL.pdb
+C:\Users\sanji_000\Desktop\Online CV\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\sanji_000\Desktop\Online CV\BL\bin\BL.dll.config
+C:\Users\sanji_000\Desktop\Online CV\BL\bin\BL.dll
+C:\Users\sanji_000\Desktop\Online CV\BL\bin\BL.pdb
+C:\Users\sanji_000\Desktop\Online CV\BL\bin\BE.dll
+C:\Users\sanji_000\Desktop\Online CV\BL\bin\DL.dll
+C:\Users\sanji_000\Desktop\Online CV\BL\bin\BE.pdb
+C:\Users\sanji_000\Desktop\Online CV\BL\bin\DL.pdb
+C:\Users\sanji_000\Desktop\Online CV\BL\obj\Debug\BL.dll
+C:\Users\sanji_000\Desktop\Online CV\BL\obj\Debug\BL.pdb

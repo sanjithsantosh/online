@@ -1,0 +1,168 @@
+﻿* {margin:0px; padding:0px; }
+body { margin:1px 1px; font-size:12px; }
+body, div, input[type=text], select, textarea { font-family:Arial, Verdana; color:#333333; }
+a { color:#0170A6; text-decoration:none; }
+a:hover { color:#F8820E; text-decoration:underline; }
+input[type=text], input[role=textbox], select, textarea { font-size:11px; border:solid 1px #ADADAD; padding:2px; }
+input[type=submit], input[type=reset], input[type=button], button, td.ActionCol a { margin:3px 3px 3px 0px; border:solid 1px #CADEEE; background:#EAF4FD; color:#2E6E9E; padding: 4px 5px; font-size:11px; font-weight:bold; cursor:pointer; -moz-border-radius: 5px 5px 5px 5px; }
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, button:hover, td.ActionCol a:hover { background:#DDECF7; border:solid 1px #79B7E7; color:#00426F } 
+select option { padding-left:2px; }
+select option[title=main] { background:#EFF9FF; color:#00426F; font-weight:bold; }
+td.ActionCol a { margin:2px; padding:1px 4px; font-size:10px; font-weight:normal; -moz-border-radius: 3px 3px 3px 3px  }
+td.ActionCol a:hover { text-decoration:none; }
+td.ActionCol a.Delete, input[type=submit].Delete { background:#FCC9C9; color:#DB2929; border-color:#F23A3A; } 
+
+.ShowMe { display:block !important }
+.Header { width:100%; background:black; }
+	.TopLinks { height:25px; background:url('../../img/theme_01/Header_top_bg.PNG') repeat-y #E2E7EB; text-align:right; padding:7px 10px 0px 0px; }
+	.Header img { float:left; }
+	.Header span { float:left; color:white; font-size:x-large; text-indent:10px; padding-top:10px; }
+
+.MainBody { border-top:1px dotted #EAEAEA;  background:#FFFFFF; }
+.LeftPane { position:absolute; width:140px; left:5px; }
+.RightPane { margin-left:158px; border-left:solid 1px #EAEAEA; background:#FFFFFF; }
+	.PageTitle, .PageMode { height:36px; background:url('../../img/theme_01/Header_bg.PNG') repeat-x; color:#007EB0; font-weight:bold; padding:5px 0px; text-indent:7px; }
+	.PageMode { width:30%; text-align:right; }
+	.PageMode a { color:#FF0000; }
+	.Msg { margin:3px 7px; padding:5px; }
+	.Msg p {  margin-left:15px; }
+	.Msg span { float:left; height: 20px; margin-top: -4px; width: 20px; }
+	.Err { background:#FFEFEF; border:solid 1px #FFCFCF; color:#FF0000; }  .Err span { background:url('../../img/theme_01/icons_r.png') no-repeat 2px -140px #FFEFEF; }
+	.Suc { background:#E4FFCF; border:solid 1px #9AFF4F; color:#499F09; }  .Suc span { background:url('../../img/theme_01/icons_g.png') no-repeat -62px -140px #E4FFCF; }
+	.Info { background:#FFFFE0; border:solid 1px #FFBF00; color:#FF9D00; } .Info span { background:url('../../img/theme_01/icons_o.png') no-repeat -15px -141px #FFFFCF; }	
+	.ContentPane { padding:0px 7px 7px 7px; }
+		ul.SideMenu { margin-left:4px; list-style:none; }
+		ul.SideMenu span { background:url('../../img/theme_01/icons_b.png') no-repeat -36px -50px transparent; margin-right:4px; }
+		ul.SideMenu a { color:#000000; }
+		ul.SideMenu a:hover { color:#F8820E; }
+		ul.SideMenu li { margin-bottom:5px; }
+		ul.SideMenu h1 { font-size:12px; margin-top:10px; }
+		ul.SideMenu h1 a:hover, ul.SideMenu h1.Active a { text-decoration:none; }
+		ul.SideMenu ul.SubItem { display:none; margin-top:9px; margin-bottom:25px; list-style:none; }
+		
+		fieldset { border:1px solid #CFEDFF }
+		fieldset legend { margin-bottom:7px; padding:5px; font-weight:bold; background:#EFF9FF; color:#007DAF; border:1px solid #CFEDFF; border-bottom:none; margin-left:-1px; }
+				
+		table th, table td { text-align:left; padding:4px; }	
+		table tr.Alter { background:#EFF9FF; }		
+		td.TableHead a, td.TableHead a:hover  { text-decoration:none !important; font-weight:bold !important; color:#000000 !important; }
+		
+		table.GridView { width:100%; border:solid 1px #CFECFF; border-collapse:collapse; }
+		table.GridView th, table.GridView td { text-align:left; padding:4px; border:solid 1px #CFECFF; }	
+		table.GridView table th, table.GridView table td { border:none !important; }
+		table.GridView th a, table.GridView TableHead a { float:left; color:#000000; text-decoration:none; }
+		table.GridView th a.SortIcon, table.GridView td a.SortIcon { margin-left:4px; height:13px; margin-top:0px; width:12px; cursor:default; background-image:url('../../img/theme_01/icons_b.png'); background-repeat:no-repeat; background-color:transparent; }
+		table.GridView th a span.SortIcon, table.GridView td a span.SortIcon { margin-left:4px; height:13px; margin-top:0px; width:12px; cursor:default; background-image:url('../../img/theme_01/icons_b.png'); background-repeat:no-repeat; background-color:transparent; }
+		table.GridView th a span.ASC, table.GridView td a span.ASC { background-position:-66px -193px; }
+		table.GridView th a span.DESC, table.GridView td a span.DESC { background-position:-98px -193px; }
+		table.GridView tr.RowEdit { background:#E6F0F7; color:#000000; }
+		table.GridView tr.GridTitle { background:#00426F; color:#FFFFFF; font-weight:bold; }
+		table.GridView tr.GridTitle span { float:left; }
+		table.GridView tr.GridTitle a { float:right; color:#DAEFFC; }
+		table.GridView tr.Filter { background:#EFF9FF; display:none; }
+		table.GridView a.HasFilter { background:url('images/Filter_s.png') no-repeat transparent; text-indent:20px}
+		table.GridView tr.ExpandFilter { background:#EFF9FF; }
+		table.GridView td.ActionCol { font-size:10px; text-align:center; padding:1px !important; }
+		table.GridView td ul { list-style: disc inside none; margin-left: 10px; margin-top: -11px; }
+		table.GridView tr.HighLight { background:#FDFFD8; }
+		table.GridView tr.Alter { background:#EFF9FF; }
+		table.GridView tr.Pagination { background:#CFECFF; }
+		table.GridView tr.Pagination input[type=text] { border-color:#6FC5FF; width:30px; }
+		table.GridView tr.Pagination select { border-color:#6FC5FF; }
+		
+		ul.Form { list-style:none; }
+		ul.Form li { clear:both; padding:3px; height:auto; font-weight:bold; }
+		ul.Form li.Alter { background:#EFF9FF; }
+		ul.Form li label { float:left; width:20%; font-weight:normal; }
+		ul.Form li span { float:left; width:78%; border-left:1px dotted #CDCDCD; padding-left:7px; }
+			
+		div.LinkList {  }
+		div.LinkList h1, div.LinkList h2, div.LinkList h3 { background:#00426F; color:#FFFFFF; font-size:12px; padding:4px; height:20px; }
+		div.LinkList h1 { padding:8px 4px 0px 8px; }
+		div.LinkList h2 { background:#61ACDF; padding:8px 4px 0px 8px; }
+		div.LinkList h3 { background:#EFF9FF; color:#61ACDF }
+		div.LinkList h3 span { float:left; }
+		div.LinkList a, div.LinkList span { display:block; padding:4px; }
+		div.LinkList a.Active, div.LinkList a:hover { background:#EFF9FF; border:solid 1px #CFECFF; }
+		div.LinkList h3 span a { font-weight:normal; }
+		
+		div.LinkList select { background:#EFF9FF; border:none 0px #FFFFFF; } /* Add */
+		div.LinkList select option { display:block; padding:4px; height:10px;  clear:both; } /* Add */
+		
+		div.LinkList span a, div.LinkList table a { display:inline; padding:0px; clear:none; }
+		div.LinkList span a.Active, div.LinkList span a:hover, div.LinkList table a.Active, div.LinkList table a:hover { background:none; border:none; }
+
+		div.ContentHalf { float:left; width:49.9%; }
+		div.ContentOneThird { float:left; width:33.3%; }
+		div.ContentOneThird ul.Form li { height:25px !important; }
+		div.ContentOneThird label { width:40% !important; }
+		div.ContentOneThird ul.Form li span.FieldValue { width:57% !important; }/* MODI */
+		
+		div.FLTSpecific label { width:69% !important; }
+		div.FLTSpecific ul.Form li span.FieldValue { width:27% !important; }/* MODI */
+		
+.Footer { background:#E2E7EB; padding:10px 0px; text-align:center; font-size:x-small }
+a span.BackIcon { margin-left:4px; height:13px; margin-top:0px; width:12px; cursor:default; background-image:url('../../img/theme_01/icons_b.png'); background-repeat:no-repeat; background-color:transparent; background-position:-146px -193px; }
+
+span.req { color:#FF0000; }
+
+div.HTab {}
+div.HTab div.HTab_Header { }
+div.HTab div.HTab_Header a { padding:7px; border:solid 1px #CFEDFF; font-weight:bold; }
+div.HTab div.HTab_Header a:hover { background:#EFF9FF; text-decoration:none; }
+div.HTab div.HTab_Header a.SEL { border-bottom-color:#FFFFFF; z-index:100; color:#F8820E; border-top-width:3px; }
+div.HTab div.HTab_DataView { border:solid 1px #CFEDFF; padding:7px; margin-top:7px; z-index:99; }
+
+#SideMenuAccordion { width:150px !important; }
+#SideMenuAccordion .ui-accordion .ui-accordion-content { padding: 12px !important; }
+#SideMenuAccordion .ui-widget-content a { font-size:11px !important; line-height:18px; }
+
+.Users input[type='checkbox'] { margin-right:5px; }
+.RightAlignButton { height:25px; text-align:right; padding:7px 0px 0px 0px; }
+
+/* tool tip -- START */
+.tooltip {
+	color: #000000 !important; outline: none;
+	text-decoration: none !important;
+	position:relative; left:3px; top:0px; margin-right:5px; padding-left:2px;
+	z-index:10px;
+}
+.IconStyle { font-size:10px; font-weight:bold; color:#FFFFFF !important; Background:#126FA8; border:solid 1px #073688; }
+.tooltip img {
+	border:none;
+	z-index:1000px;
+}
+.tooltip span {
+	margin-left: -999em;
+	position: absolute;
+	z-index:1000px;
+	color: #000000 !important; 
+}
+.tooltip:hover {
+	z-index:1000px;
+}
+.tooltip:hover span, VisibleToolTip {
+	border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);	
+	position: absolute; left: 1em; top: 2em; z-index: 99;
+	margin-left: 0; width: 250px;
+	font-weight:normal !important;
+}
+.tooltip:hover img.Large {
+	border: 0; margin: -10px 0 0 -55px;
+	float: left; position: absolute;
+}
+.tooltip:hover em {
+	font-weight: bold;
+	display: block; 
+	padding: 0.2em 0 0.6em 0;
+}
+.classic { padding: 0.8em 1em; }
+.custom { padding: 0.5em 0.8em 0.8em 2em !important; }
+
+.classic {background: #FFFFAA; border: 1px solid #FFAD33 !important; }/* MODI */
+.critical { background: #FFCCAA; border: 1px solid #FF3334 !important;	}/* MODI */
+.help { background: #9FDAEE; border: 1px solid #2BB0D7 !important;	}/* MODI */
+.info { background: #9FDAEE; border: 1px solid #2BB0D7 !important;	}/* MODI */
+.warning { background: #FFFFAA; border: 1px solid #FFAD33 !important; }/* MODI */
+/* tool tip -- END */

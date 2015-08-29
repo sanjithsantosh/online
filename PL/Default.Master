@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="PL.Default" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Online CV</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/theme_01/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/theme_01/jqueryui_1_8_11.css" />
+
+    <script language="javascript" type="text/javascript" src="<%=GlobalLinkPrefix %>/js/jquery_1_5_1_min.js"></script>
+    <script language="javascript" type="text/javascript" src="<%=GlobalLinkPrefix %>/js/jqueryui_1_8_11_min.js"></script>
+    <script language="javascript" type="text/javascript" src="<%=GlobalLinkPrefix %>/js/common.js"></script>
+    
+    <asp:ContentPlaceHolder ID="plhHeader" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmDefault" runat="server">
+    <div class="Header">
+        <div class="TopLinks" id="divTopLinks" runat="server">
+            Welcome&nbsp;<strong><asp:Literal ID="litUserName" runat="server" /></strong>&nbsp;|&nbsp;
+            <asp:LinkButton ID="lnkLogout" runat="server" Text="logout" OnClick="lnkLogout_Click"></asp:LinkButton>&nbsp;|&nbsp;
+              <asp:LinkButton ID="lnkLogin" runat="server" Text="Already a User" OnClick="lnkLogin_Click"></asp:LinkButton>
+        </div>
+        &nbsp;<span>Online Resume</span>
+        <br clear="all" />
+    </div>
+    <br clear="all" />
+    <div class="MainBody">
+        <span id="SideMenu" runat="server">
+         
+                <h3><a href="PersonalDetails.aspx">Personal Details</a></h3>
+              
+                <h3><a href="EducationalDetails.aspx">Educational Details</a></h3>
+           
+                <h3><a href="ProfessionalDetails.aspx">Professional Details</a></h3>
+              
+                <h3><a href="CertificationDetails.aspx">Certification Details</a></h3>
+                
+               
+        
+        </span>
+        <div class="RightPane">
+            <div class="PageTitle">
+                <asp:ContentPlaceHolder ID="plhPageTitle" runat="server"></asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="plhPageMode" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <%--<br clear="all" />--%>
+            <div id="divMessage" runat="server" visible="false"></div>
+            <br clear="all" />
+            <asp:ContentPlaceHolder ID="plhPageContent" runat="server"></asp:ContentPlaceHolder>
+            <br clear="all" />
+        </div>
+    </div>
+    <div class="Footer">
+        This site is for test purpose only<br />
+        <br />
+        SS. All Rights Reserved
+    </div>
+    </form>
+    <asp:ContentPlaceHolder ID="plhScriptArea" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

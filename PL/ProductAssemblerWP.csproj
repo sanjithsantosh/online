@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D68A02A7-974F-479B-8D65-7D99F7216F89}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AmericanExpress.PaUi.WP</RootNamespace>
+    <AssemblyName>AmericanExpress.PaUi.WP</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AmericanExpress.Util.AXPNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=a0fc44e3b7980633, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\343381\Desktop\ProductAssembler\PAUI\ProductAssemblerWP\bin\AmericanExpress.Util.AXPNetCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\theme_01\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="js\common.js" />
+    <Content Include="RequestAll.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="Segment\SegmentFactory.aspx.cs">
+      <DependentUpon>SegmentFactory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Segment\SegmentFactory.aspx.designer.cs">
+      <DependentUpon>SegmentFactory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Segment\SegmentList.aspx.cs">
+      <DependentUpon>SegmentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Segment\SegmentList.aspx.designer.cs">
+      <DependentUpon>SegmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Segment\FLTModule.aspx.cs">
+      <DependentUpon>FLTModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Segment\FLTModule.aspx.designer.cs">
+      <DependentUpon>FLTModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Segment\SegmentView.aspx.cs">
+      <DependentUpon>SegmentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Segment\SegmentView.aspx.designer.cs">
+      <DependentUpon>SegmentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestSP.aspx.cs">
+      <DependentUpon>TestSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestSP.aspx.designer.cs">
+      <DependentUpon>TestSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\AmgraRadioButton.cs" />
+    <Compile Include="uc\AmgraLabel.cs" />
+    <Compile Include="uc\AmgraCommon.cs" />
+    <Compile Include="uc\Segment\FLTDetails.ascx.cs">
+      <DependentUpon>FLTDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\Segment\FLTDetails.ascx.designer.cs">
+      <DependentUpon>FLTDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\Segment\SegmentDetails.ascx.cs">
+      <DependentUpon>SegmentDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\Segment\SegmentDetails.ascx.designer.cs">
+      <DependentUpon>SegmentDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vwsrl.aspx.cs">
+      <DependentUpon>vwsrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vwsrl.aspx.designer.cs">
+      <DependentUpon>vwsrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RatesAvailable.aspx.cs">
+      <DependentUpon>RatesAvailable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RatesAvailable.aspx.designer.cs">
+      <DependentUpon>RatesAvailable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestDetails.aspx.cs">
+      <DependentUpon>RequestDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestDetails.aspx.designer.cs">
+      <DependentUpon>RequestDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUsers.aspx.cs">
+      <DependentUpon>ViewUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUsers.aspx.designer.cs">
+      <DependentUpon>ViewUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IAIOModule.aspx.cs">
+      <DependentUpon>IAIOModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IAIOModule.aspx.designer.cs">
+      <DependentUpon>IAIOModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureAssociationList.aspx.cs">
+      <DependentUpon>FeatureAssociationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeatureAssociationList.aspx.designer.cs">
+      <DependentUpon>FeatureAssociationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureModule.aspx.cs">
+      <DependentUpon>FeatureModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeatureModule.aspx.designer.cs">
+      <DependentUpon>FeatureModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRequest.aspx.cs">
+      <DependentUpon>CreateRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateRequest.aspx.designer.cs">
+      <DependentUpon>CreateRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EditRequest.aspx.cs">
+      <DependentUpon>EditRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditRequest.aspx.designer.cs">
+      <DependentUpon>EditRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IAIORelationshipList.aspx.cs">
+      <DependentUpon>IAIORelationshipList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IAIORelationshipList.aspx.designer.cs">
+      <DependentUpon>IAIORelationshipList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IOModule.aspx.cs">
+      <DependentUpon>IOModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IOModule.aspx.designer.cs">
+      <DependentUpon>IOModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssuanceOptionList.aspx.cs">
+      <DependentUpon>IssuanceOptionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssuanceOptionList.aspx.designer.cs">
+      <DependentUpon>IssuanceOptionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUser.aspx.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUser.aspx.designer.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RateAssociationList.aspx.cs">
+      <DependentUpon>RateAssociationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RateAssociationList.aspx.designer.cs">
+      <DependentUpon>RateAssociationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RateModule.aspx.cs">
+      <DependentUpon>RateModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RateModule.aspx.designer.cs">
+      <DependentUpon>RateModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestActive.aspx.cs">
+      <DependentUpon>RequestActive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestActive.aspx.designer.cs">
+      <DependentUpon>RequestActive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestAll.aspx.cs">
+      <DependentUpon>RequestAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestAll.aspx.designer.cs">
+      <DependentUpon>RequestAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestHistory.aspx.cs">
+      <DependentUpon>RequestHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestHistory.aspx.designer.cs">
+      <DependentUpon>RequestHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestAgoraListView.aspx.cs">
+      <DependentUpon>TestAgoraListView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestAgoraListView.aspx.designer.cs">
+      <DependentUpon>TestAgoraListView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestEmail.aspx.cs">
+      <DependentUpon>TestEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestEmail.aspx.designer.cs">
+      <DependentUpon>TestEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeOut.aspx.cs">
+      <DependentUpon>TimeOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeOut.aspx.designer.cs">
+      <DependentUpon>TimeOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\AmgraListView.cs" />
+    <Compile Include="uc\AmgraListViewHeader.cs" />
+    <Compile Include="uc\AmgraTextBox.cs" />
+    <Compile Include="uc\AmgraDropDownList.cs" />
+    <Compile Include="uc\RequestDetails.ascx.cs">
+      <DependentUpon>RequestDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\RequestDetails.ascx.designer.cs">
+      <DependentUpon>RequestDetails.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="access_denied.html" />
+    <Content Include="App_Data\WebServiceConfig_PMCWSH_E3.xml" />
+    <Content Include="App_Data\WebServiceConfig_PMCWSH_E2.xml" />
+    <Content Include="App_Data\XmlDataSource_FLTToolTip.xml" />
+    <Content Include="App_Data\XmlDataSource_Modules.xml" />
+    <Content Include="App_Data\LogMessage.xslt" />
+    <Content Include="App_Data\XmlDataSource_FLT.xml" />
+    <Content Include="App_Data\WebServiceConfig_PMCWSH_E1.xml" />
+    <Content Include="css\theme_01\images\Critical.png" />
+    <Content Include="css\theme_01\images\Filter_s.png" />
+    <Content Include="css\theme_01\images\Help.png" />
+    <Content Include="css\theme_01\images\Info.png" />
+    <Content Include="css\theme_02\images\Critical.png" />
+    <Content Include="css\theme_02\images\Filter_s.png" />
+    <Content Include="css\theme_02\images\Help.png" />
+    <Content Include="css\theme_02\images\Info.png" />
+    <Content Include="css\theme_02\images\Warning.png" />
+    <Content Include="img\theme_01\Help_s.jpg" />
+    <Content Include="img\theme_01\Info_s.jpg" />
+    <Content Include="css\theme_01\images\Warning.png" />
+    <Content Include="img\theme_01\Warning_s.jpg" />
+    <Content Include="ErrorPage.html" />
+    <Content Include="css\theme_02\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="css\theme_02\images\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="css\theme_02\images\ui-bg_flat_0_333333_40x100.png" />
+    <Content Include="css\theme_02\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="css\theme_02\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\theme_02\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="css\theme_02\images\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <Content Include="css\theme_02\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+    <Content Include="css\theme_02\images\ui-bg_highlight-soft_15_cc0000_1x100.png" />
+    <Content Include="css\theme_02\images\ui-icons_004276_256x240.png" />
+    <Content Include="css\theme_02\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="css\theme_02\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\theme_02\jqueryui_1_8_11.css" />
+    <Content Include="css\theme_02\style.css" />
+    <Content Include="img\theme_02\AmexLogo.PNG" />
+    <Content Include="img\theme_02\Header_bg.PNG" />
+    <Content Include="img\theme_02\Header_top_bg.PNG" />
+    <Content Include="img\theme_02\icons_approve.PNG" />
+    <Content Include="img\theme_02\icons_b.png" />
+    <Content Include="img\theme_02\icons_cancel.PNG" />
+    <Content Include="img\theme_02\icons_edit.PNG" />
+    <Content Include="img\theme_02\icons_g.png" />
+    <Content Include="img\theme_02\icons_o.png" />
+    <Content Include="img\theme_02\icons_r.png" />
+    <Content Include="img\theme_02\Info_s.jpg" />
+    <Content Include="js\jquery_tools_min.js" />
+    <Content Include="js\ps\FLTList.js" />
+    <Content Include="js\ps\FLTDetails.js" />
+    <Content Include="js\ps\FLTModule.js" />
+    <Content Include="js\ps\IAIOModule.js" />
+    <Content Include="Segment\SegmentFactory.aspx" />
+    <Content Include="Segment\SegmentList.aspx" />
+    <Content Include="Segment\FLTModule.aspx" />
+    <Content Include="Segment\SegmentView.aspx" />
+    <Content Include="Template\ApproveEmail_WFError.html" />
+    <Content Include="Test\TestSP.aspx" />
+    <Content Include="uc\Segment\FLTDetails.ascx" />
+    <Content Include="uc\Segment\SegmentDetails.ascx" />
+    <Content Include="vwsrl.aspx" />
+    <Content Include="RatesAvailable.aspx" />
+    <Content Include="RequestDetails.aspx" />
+    <Content Include="Template\ApproveEmail.html" />
+    <Content Include="Template\CancelEmail.html" />
+    <Content Include="Template\RejectEmail.html" />
+    <Content Include="Template\SubmitEmail.html" />
+    <Content Include="ViewUsers.aspx" />
+    <Content Include="IAIOModule.aspx" />
+    <Content Include="css\theme_01\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\theme_01\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="css\theme_01\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="css\theme_01\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="css\theme_01\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\theme_01\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="css\theme_01\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="css\theme_01\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="css\theme_01\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="css\theme_01\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\theme_01\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="css\theme_01\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="css\theme_01\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\theme_01\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="css\theme_01\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="css\theme_01\jqueryui_1_8_11.css" />
+    <Content Include="FeatureAssociationList.aspx" />
+    <Content Include="FeatureModule.aspx" />
+    <Content Include="CreateRequest.aspx" />
+    <Content Include="Default.Master" />
+    <Content Include="EditRequest.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="IAIORelationshipList.aspx" />
+    <Content Include="img\theme_01\AmexLogo.PNG" />
+    <Content Include="img\theme_01\Header_bg.PNG" />
+    <Content Include="img\theme_01\Header_top_bg.PNG" />
+    <Content Include="img\theme_01\icons_approve.PNG" />
+    <Content Include="img\theme_01\icons_b.png" />
+    <Content Include="img\theme_01\icons_cancel.PNG" />
+    <Content Include="img\theme_01\icons_edit.PNG" />
+    <Content Include="img\theme_01\icons_g.png" />
+    <Content Include="img\theme_01\icons_o.png" />
+    <Content Include="img\theme_01\icons_r.png" />
+    <Content Include="IOModule.aspx" />
+    <Content Include="IssuanceOptionList.aspx" />
+    <Content Include="js\jqueryui_1_8_11_min.js" />
+    <Content Include="js\jquery_1_5_1_min.js" />
+    <Content Include="js\ps\FeatureModule.js" />
+    <Content Include="js\ps\manageuser.js" />
+    <Content Include="js\ps\RequestModule.js" />
+    <Content Include="ManageUser.aspx" />
+    <Content Include="App_Data\Module.xml" />
+    <Content Include="RateAssociationList.aspx" />
+    <Content Include="RateModule.aspx" />
+    <Content Include="RequestActive.aspx" />
+    <Content Include="RequestHistory.aspx" />
+    <Content Include="Test\TestAgoraListView.aspx" />
+    <Content Include="Test\TestEmail.aspx" />
+    <Content Include="TimeOut.aspx" />
+    <Content Include="uc\RequestDetails.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductAssemblerBE\ProductAssemblerBE.csproj">
+      <Project>{F853C625-3BD3-4D45-AC9D-4F47BE9FFD4A}</Project>
+      <Name>ProductAssemblerBE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProductAssemblerBL\ProductAssemblerBL.csproj">
+      <Project>{24A732BF-D64D-43C6-AA58-966677EE2580}</Project>
+      <Name>ProductAssemblerBL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\wshpmc.pfx" />
+    <None Include="Help\UserManual.pdf" />
+    <None Include="Web.config_E1" />
+    <None Include="Web.config_E3" />
+    <None Include="Web.config_E2" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>2011</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
